@@ -1,0 +1,30 @@
+CREATE DATABASE librarydb;
+USE librarydb;
+
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    author VARCHAR(255),
+    price DECIMAL(10,2)
+);
+
+
+file name save by library_system.py
+
+
+  conn = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="yourpassword",
+    database="librarydb"
+)
+ update pass
+
+  run this python library_system.py
+
+
+  youll see --- Library Menu ---
+1. Add Book
+2. Show All Books
+3. Delete Book
+4. Exit
